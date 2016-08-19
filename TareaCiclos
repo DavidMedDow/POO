@@ -1,0 +1,23 @@
+import javax.swing.*;
+
+public class TareaCiclos{
+	public static void factores(){
+		String factor=JOptionPane.showInputDialog("Dame el numero");
+		double factorD=Double.parseDouble(factor);
+		int contador=2;
+		while(factorD!=1){
+			if(factorD%contador==0){
+				System.out.println(contador);
+				factorD=factorD/contador;
+			}
+			else{
+				contador++;
+			}
+		}
+	}
+	
+	public static void main(String[] args){
+		factores();
+	}
+
+}
