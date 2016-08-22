@@ -1,0 +1,73 @@
+public class Libro{
+	private String titulo,
+			autor,
+			editorial,
+	 		isbn;
+
+	private String tit,
+			aut,
+			edit,
+			isb;
+	
+	
+	public String getTitulo(){
+		return tit;
+	}
+
+	public void setTitulo(String tit){
+		this.titulo = tit;
+		this.tit = "Sangre";
+	}
+
+	public String getautor(){
+		return aut;
+	}
+
+	public void setAutor(String aut){
+		this.autor = aut;
+		this.aut = "Carlos Sanchez";
+	}
+
+	public String getEditorial(){
+		return edit;
+	}
+
+	public void setEditorial(String edit){
+		this.editorial = edit;
+		this.edit = "Diamante";
+	}
+
+	public String getIsbn(){
+		return isb;
+	}
+
+	public void setIsbn(String isb){
+		this.isbn = isb;
+		this.isb = "ISBN 9789687277042";
+	}
+
+
+	public static void main(String[] args){
+		Libro miLibro=new Libro();
+		miLibro.titulo="Juventud en extasis";
+		miLibro.autor="Carlos Cuahutemoc Sanchez";
+		miLibro.editorial="Editorial Diamante";
+		miLibro.isbn="9789687277042";
+
+		System.out.println(miLibro.titulo);
+		System.out.println(miLibro.autor);
+		System.out.println(miLibro.editorial);
+		System.out.println(miLibro.isbn);
+		System.out.println(" ");
+
+		miLibro.setTitulo("Sangre de Campeon");
+		miLibro.setAutor("Carlos Sanchez");
+		miLibro.setEditorial("Diamante");
+		miLibro.setIsbn("ISBN 9789687277042");
+
+		System.out.println(miLibro.tit);
+		System.out.println(miLibro.aut);
+		System.out.println(miLibro.edit);
+		System.out.println(miLibro.isb);
+	}
+}
