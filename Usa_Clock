@@ -1,0 +1,26 @@
+public class UsaClock{
+	public static void main(string[] args){
+		Clock gdl=new Clock();
+		Clock tij=new Clock(10,27,5);
+		Clock LA=new Clock(10,28,6);
+
+		gdl.printTime();
+		tij.printTime();
+
+		gdl.setTime(12,33,0);
+		gdl.incrementSeconds();
+
+		tij.setTime(10,33,0);
+		tij.incrementMinutes();
+
+		LA.incrementHours();
+
+		gdl.printTime();
+		tij.printTime();
+		LA.printTime();
+
+		LA.setTime(23.59.59);
+		LA.incrementSeconds();
+		LA.printTime();
+	}
+}
